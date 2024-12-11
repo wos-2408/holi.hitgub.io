@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de css </title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      h1 {
+        color: yellowgreen;
+      }     
+    </style>
+</head>
+
+<body>
+  <article id="temario-css">
+ <h1>Aprendiendo CSS</h1>
+ <p><i style="font-weight: bold;color: orangered ;">Cascading Style Sheets</i>- Hojas de Estilo en Cascada </p>
+ <!-- CSS: es el que le da el diseño a nuestro documento HTML -->
+  <h2>temario del curso</h2>
+  <ul class="visited">
+    <li><a href="index.html#selectores-basicos">selectores basicos</a></li>
+    <li><a href="index.html#selectores-avanzados">Selectores avanzados</a></li>
+    <li><a href="index.html#posiciones-directas">posiciones directas</a></li>
+    <li><a href="index.html#dias-de-la-semana">dias de la semana</a></li>
+    <li><a href="index.html#pseudoclases">pseudoclases</a></li>
+    <li><a href="index.html#meses-del-año">meses del año</a></li>
+    <li><a href="index.html#paises-sur-americpseudoelementos</a></li>
+    <li><a href="index.html#agrupaa">paises de sur america</a></li>
+    <li><a href="index.html#pseudoelementos">r-selectores">agrupar selectores</li>
+    <li><a href="index.html#algoritmo-css">el algoritmo de css</li>
+    <li><a href="index.html#prefijos-navegadores">prefijos de los navegadores</li>
+      <li><a href="box-model.html">modelo de caja en css</li>
+        <li><a href="index.html#prefijos-navegadores">prefijos de los navegadores</li>
+   
+
+     </ul>
+
+    
+
+     
+
+      
+    
+    
+    
+  
+  </ul>
+</article>
+  <hr>
+  <article id="selectores-basicos">
+    <h2>selectores basicos</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos alias optio quis voluptatum, quasi
+       quos quod veniam ipsa provident
+        tempora culpa ullam, rem nobis vero eveniet quaerat, corrupti dolore odio!
+      </p>
+        <p id="parrafo-dos">
+          Lorem ipsum, dolor sit amet con
+          sectetur adipisicing elit. Culpa ipsa dicta, error nulla excepturi, voluptatibus 
+          rem illo quos exercitationem amet corrupti soluta laudantium eligendi? Amet ab ea odio voluptatum unde?
+        </p>
+        <p class="text-32 bg-skyblue">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur neque quidem repellendus odio, opti
+          o nemo pariatur provident, iste, alias commodi minima autem inc
+          idunt nesciunt fugiat in atque repellat ullam a!
+
+        </p>
+        <p class="text-20 bg-steelblue text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed corrupti odit incidunt neque dolor
+          um fuga, harum consectetur quos nobis est explicabo, veritatis eli
+          gendi quod obcaecati delectus quaerat, iste error ducimus.
+        </p>
+        <p class="text-32 bg-steelblue text-white">
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora velit veritatis
+         suscipit laudantium
+         delectus optio explicabo porro quaerat repellat enim libero, cum quas ipsa nostrum reiciendis doloribus fuga quod saepe?
+
+        </p>
+    <a href="index.html#temario-css">☝️</a>
+    <p>
+      
+    </p>
+  </article>
+  <hr>
+
+
+  <article id="selectores-avanzados">
+
+    <h2>Selectores Avanzados</h2>
+    <h3>Selectores de hijos</h3>
+    <h4>Selector de hijos directos</h4>
+    <ul class="hijos-directos">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h4>Selector de hijos descendientes</h4>
+    <ul class="hijos-descendientes">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+<a href="index.html#temario-css">☝️</a>
+< id="posiciones-directas">
+
+  <h2>posiciones directas</h2>
+
+  <ul id="posiciones-directas" class="posiciones-directas">
+    <li><b>primero</b></li>
+    <li><b>segundo</b></li>
+    <li><b>tercero</b></li>
+    <li><b>cuarto</b></li>
+  </ul>
+  <h2>dias de la semana</h2>
+    <ul id="dias-de-la-semana" class="dias-de-la-semana">
+      <li><b>lunes</b></li>
+      <li><b>martes</b></li>
+      <li><b>miercoles</b></li>
+      <li><b>jueves</b></li>
+      <li><b>viernes</b></li>
+      <li><b>sabado</b></li>
+      <li><b>domingo</b></li>
+    </ul>
+    <h3>selectores de hermanos</h3>
+    <h4>selector de hermanos (en general)</h4>
+    <ul>
+      <li><b>Primavera</b></li>
+      <li class="hermanos-general"><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <h4>selector de hermanos adyacentes</h4>
+    <ul>
+      <li><b>Primavera</b></li>
+      <li class="hermanos-adyacentes"><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <h3>selectores de atributos</h3>
+
+    <nav class="selectores-atributos">
+      <ul>
+        <li><a href="+https://www.construct.net/en/make-games/free-trial" target="_blank">construct</a></li>
+        <li><a class="menu-item cursos button" href="https://www.youtube.com/watch?v=VBiNZcH27Y8&list=RD0nTmb1vPtls&index=6" target="_blank">otro atardecer</a></li>
+        <li><a href="https://discord.com/channels/@me/1296970539998515320" target="_blank">discord</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">youtube</a></li>
+        <li><a href="https://www.friv.com/" target="_blank">friv</a></li>
+        <li><a href="http://www.realmadrid.com/es-ES" target="_blank">real madrid</a></li>
+        <li><a href="http://www.fcbarcelona.es/es/" target="_blank">barcelona</a></li>
+      </ul>
+
+      <!-- la etiqueta "nav" sirve para hacer una navegacion -->
+      
+
+    
+       <!-- ul>li*4>a[target="_blank"] algunas personas usan esta etiqueta para poner los links, el "target" se le agrega porque
+        van a ser enlaces externos  -->
+      </nav>
+
+    <h3>selector universal (*)</h3>
+
+    <u class="selector-universal">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </u>
+    <hr>
+
+    
+    <article id="pseudoclases">
+
+     <h2>pseudoclases</h2> 
+     <form class="form-pseudoclases">
+     <input type="password" name="nombre" placeholder="escribe tu contraseña" required>
+     <br>
+     <input type="email" name="correo" placeholder="escribe tu correo" required>
+     <br>
+     <input type="submit">
+     <input type="submit" disabled>
+     <br>
+     </form>                                        
+
+     <nav class="menu-pseudoclases">
+
+      <a href="seccion1">seccion 1</a>
+      <a href="seccion2">seccion 2</a>
+      <a href="seccion3">seccion 4</a>
+      <a href="seccion4">seccion 4</a>
+     </nav>
+
+     <p class="p-pseudoclases">
+
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque exercitationem illo quo nisi
+      , odit itaque molestiae molestias repudiandae,
+       perspiciatis corrupti quis voluptate sunt ea! Error veritatis nam repudiandae optio a?
+     </p>
+     
+     <ol class="meses1">
+      <li>enero</li>
+      <li>febrero</li>
+      <li>marzo</li>
+      <li>abril</li>
+      <li>mayo</li>
+      <li>junio</li>
+      <li>julio</li>
+      <li>agosto</li>
+      <li>septiembre</li>
+      <li>octubre</li>
+      <li>noviembre</li>
+      <li>diciembre</li>
+
+     </ol>
+
+     <input type="password" name="contraseña" placeholder="escribe tu contraseña" required>
+     <input type="submit">
+
+     <form>
+      <input type="text" name="nombre" placeholder="escribe tu nombre">
+      <input type="submit">
+      <article class="articulo-pseudoclases">
+
+        <header>esto es una header</header>
+        <p>esto es un p</p>
+        <div>esto es una div</div>
+        <p>esto es un p</p>
+        <section>esto es una section</section>
+        <div>esto es una div</div>
+        <p>esto es un  p</p>
+        <footer>esto es un footer</footer>
+      </article>
+
+
+    </form>
+
+
+     </article>
+
+     <hr>
+
+     <article id="pseudoelementos">
+
+      <h2>pseudoelementos</h2>
+      <p>
+        <i>bandai myth cloth ex</i> <span class="saga-geminis">saga de saga-geminis</span>
+        <span class="saga-precio">500</span>
+      </p>
+       
+      <p class="p-pseudoelementos">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Illum, qui quis? Velit voluptatibus ea debitis,
+         dicta nesciunt commodi blanditiis praesentium similique in? Voluptate, rerum maxime? Repellendus nam aliquam vitae reiciendis!
+      </p>
+
+      <input class="input-pseudoelementos" type="text" name="nombre" placeholder="escribe tu nombre">
+
+     </article>
+
+     <hr>
+
+     <article id="agrupar-selectores">
+
+      <h2>agrupar selectores</h2>
+      <form action="" class="form-agrupar-selectores">
+
+        <input type="text" name="nombre" placeholder="escribe tu nombre">
+        <input type="email" name="correo" placeholder="escribe tu email">
+        <textarea name="comentarios" placeholder="escribe tus comentarios"></textarea>
+        <input type="submit">
+
+        
+
+      </form>
+      
+
+     </article>
+     <br>
+
+     <article id="algoritmo-css">
+
+      <h2>el algoritmo de css</h2>
+
+      <ol>
+        <li>la cascada</li>
+        <li>la especifidad</li>
+        <li>la herencia</li>
+      </ol>
+
+      <blockquote id="cita-luis" class="cita-luis">está bien que estés muy triste despueś de una ruptura,<br> la muerte de un ser querido, etc. <br>
+        es algo muy normal, pero no pienses que vas a durar con ese dolor toda la vida,<br>
+        recuerda que el tiempo todo lo cura. <cite>luis montoya</cite>
+      </blockquote>
+
+    
+
+     </article>
+     <br>
+
+     <article id="prefijos-navegadores">
+      <h2>prefijos de los navegadores</h2>
+      <ul>
+        <li>navegadores de microsoft <code><b>-ms-</b></code></li>
+        <li>firefox <code><b>-moz-</b></code></li>
+        <li>todos los demás navegadores <code><b>-webkit-</b></code></li>
+      </ul>
+     </article>
+    <hr>
+
+    <code>hola</code>
+
+
+
+     
+    <code><b>hola</b></code>
+  
+
+    
+
+
+
+  
+
+
+    
+    
+
+  
+
+
+
+
+  
+
+  
+
+  
+  
+
+
+
+  
+  <!-- ul>li*2>a   con esta etiqueta genero tipo subtitulos que son azules, y al darle click me lleva a una direccion
+   en los "" siempre va con guiones, se llama lista desordenada -->
+
+ <!-- ul>li*4>b esto es un código emmet -->
+
+ <!-- html {
+        scroll-behavior: smooth;
+      } con esto haré que al dar click en un titulo o algo haga una breve animación para ir a la direccion  -->
+  
+
+ 
+
+
+
+
+
+
+  
+
+
+
+
+
+
+</body>
+
+
+</html>
